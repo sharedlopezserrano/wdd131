@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h1 {
+  background-color: #004080;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #003366;
+  font-size: 2rem;
+}
+
+h1 span {
+  color: gold;
+}
+
+nav {
+  background-color: #003366;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  flex: 1;
+}
+
+nav a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+section {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+section p {
+  line-height: 1.8; 
+  margin-bottom: 1rem;
+}
+
+section div {
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+}
+
+#shared-image {
+  float: right;
+  margin: 0 0 1rem 1rem;
+}
+
+#toledo-city {
+  float: left;
+  margin-right: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem;
+}
+
+ul li a {
+  display: block;
+  padding: 0.5rem;
+}
+
+
+footer {
+  background-color: #003366;
+  color: #f0f8ff;
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 2rem;
+}
+
+center-box {
+  margin: 2rem auto;
+  padding: 1.5rem;
+  max-width: 800px;
+  text-align: center;
+  border: 2px solid #004080;
+  background-color: #e6f7ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #004080;
+}
+
+.center-box h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 2rem;
+}
+
+.center-box div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.center-box div p {
+  flex: 1;
+  margin-right: 1rem;
+  line-height: 1.8;
+}
+
+.center-box div img {
+  max-width: 150px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.center-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.center-box ul li {
+  margin: 0.5rem 0;
+}
+
+.center-box ul li a {
+  color: #004080;
+  text-decoration: none;
+}
+
+.center-box ul li a:hover {
+  text-decoration: underline;
+  color: #ff6600;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 0.5rem 0;
+}
