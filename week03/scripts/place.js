@@ -6,12 +6,7 @@ let windSpeed = 15;
 
 
 function calculateWindChill(temp, speed) {
-  let chill =
-    13.12 +
-    0.6215 * temp -
-    11.37 * Math.pow(speed, 0.16) +
-    0.3965 * temp * Math.pow(speed, 0.16);
-  return chill.toFixed(1);
+  return (13.12 + 0.6215 * temp - 11.37 * Math.pow(speed, 0.16) + 0.3965 * temp * Math.pow(speed, 0.16)).toFixed(1);
 }
 
 
@@ -28,8 +23,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 
   if (temperature <= 10 && windSpeed > 4.8) {
-    let windChill = calculateWindChill(temperature, windSpeed);
-    valueSpan.textContent = windChill + " °C";
+    valueSpan.textContent = calculateWindChill(temperature, windSpeed) + " °C";
   } else {
     valueSpan.textContent = "N/A";
   }
