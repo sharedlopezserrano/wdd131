@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Valparaíso</title>
+  <link rel="stylesheet" href="week03/styles/place.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="week03/styles/mobile.css" media="(max-width: 767px)">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>Valparaiso</h1>
+  </header>
+
+  <main class="banner">
+    <img class="img-desktop" src="week03/images/vina-large.webp" alt="Viña del Mar" />
+    <img class="img-mobile" src="week03/images/vina-mobile.webp" alt="Viña del Mar" />
+    <div class="overlay"></div>
+
+    <section class="cards-container">
+      <div class="card data-box top-left">
+        <div class="card-title">Data</div>
+        <div class="card-body">
+          <p><span class="label">Area:</span> 401.6 km²</p>
+          <p><span class="label">Population:</span> 296,655</p>
+          <p><span class="label">Capital:</span> Viña del Mar</p>
+          <p><span class="label">Language:</span> Spanish</p>
+          <p><span class="label">Currency:</span> Chilean Peso</p>
+          <p><span class="label">Time Zone:</span> UTC-4</p>
+          <p><span class="label">Calling Code:</span> +56</p>
+          <p><span class="label">Domain:</span> .cl</p>
+        </div>
+      </div>
+
+      <div class="card data-box bottom-right">
+        <div class="card-title">Current Weather</div>
+        <div class="card-body">
+          <img class="weather-icon-mobile" src="week03/images/weather.svg" alt="Partly Cloudy" style="width: 80px; margin: 1rem auto;">
+          <p><span class="label">Condition:</span> Sunny</p>
+          <p><span class="label">Temperature:</span> 18°C</p>
+          <p><span class="label">Humidity:</span> 72%</p>
+          <p><span class="label">Wind:</span> 15 km/h S</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Shared Lopez Serrano &middot; Chile</p>
+    <p>Last Modification: <span id="modification-date"></span></p>
+  </footer>
+  <script src="week03/scripts/place.js"></script>
+</body>
+</html>

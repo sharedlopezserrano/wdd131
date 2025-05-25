@@ -1,0 +1,103 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #f6fef9;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  background-color: #003366;
+  color: white;
+  padding: 1rem;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.img-desktop {
+  display: none;
+}
+
+.img-mobile {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.weather-icon-mobile {
+  display: block;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center; 
+}
+
+.card {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 2rem auto;
+  text-align: center;
+  font-size: 0.95rem;
+  padding: 0 1rem;
+}
+
+.card-title {
+  all: unset;
+  display: block;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #000;
+  text-align: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+}
+
+.data-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.02rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.label {
+  font-weight: bold;
+  color: #000;
+}
+
+.value {
+  color: #222;
+  text-align: right;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.85rem;
+}
