@@ -1,0 +1,54 @@
+:root {
+    --primary-color: #4CAF50; /* Green */
+    --secondary-color: #000000; /* Light Gray */
+    --third-color: #333; /* Dark Gray */
+    --shadow: hsl(0,0%,50%);
+    --shadow-color: rgba(163, 163, 163, 0.1);
+    --border: rgba(0, 0, 0, 0.1);
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    margin: 10px auto;
+    border: thin solid var(--primary-color);
+    box-shadow: 0 0 10px var(--shadow);
+    border-collapse: collapse;
+    
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--primary-color);
+    font-size: .85rem;
+}
+
+th, td {
+    padding: 10px;
+    border: thin solid var(--border);
+}
+
+tr:first-child th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.black {
+    background-color: var(--secondary-color);
+}
+.header {
+    padding: 10px;
+    background-color: var(--third-color);
+    color: white;
+    text-align: center;
+}
+.grey {
+    background-color: var(--shadow-color);
+}
+tbody {
+    text-align: center;
+}
