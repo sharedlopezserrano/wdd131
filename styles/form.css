@@ -1,15 +1,12 @@
 :root {
-    --light-gold-color: #EECF6D;
-    --gold-color: #D5AC4E;
-    --brown-color: #720E07;
-    /* Swapped with dark-red-color */
-    --dark-red-color: #8B6220;
-    /* Swapped with brown-color */
-    --darker-red-color: #45050C;
+    --light-gold-color: #F4D47C;
+    --gold-color: #C99A3A;
+    --brown-color: #5A0B05;
+    --dark-red-color: #6E4A1A;
+    --darker-red-color: #3A0307;
     --white-color: #FFFFFF;
 }
 
-/* General Reset */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,51 +16,42 @@
 body {
     font-family: Arial, sans-serif;
     background-color: white;
-    /* Gold */
-    padding: 30px;
+    padding: 40px;
 }
 
-/* Main Container */
 .review-container {
     background-color: var(--light-gold-color);
-    /* Light gold */
     max-width: 500px;
     margin: auto;
-    padding: 25px 30px;
+    padding: 30px 35px;
     border-radius: 10px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
     border-top: 8px solid var(--brown-color);
-    /* Brown */
 }
 
-/* Title */
 h1 {
     background-color: var(--brown-color);
-    /* Brown */
     color: var(--white-color);
-    /* White */
     font-size: 1.5rem;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     border-radius: 6px;
     margin-bottom: 20px;
 }
 
-/* Labels and Inputs */
 label,
 legend {
     display: block;
     font-weight: bold;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    /* Dark red */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--dark-red-color);
 }
 
 small {
     font-weight: normal;
     font-size: 0.85em;
     color: var(--darker-red-color);
-    /* Darker red */
 }
 
 select,
@@ -71,17 +59,14 @@ input[type="text"],
 input[type="date"],
 textarea {
     width: 100%;
-    padding: 8px 10px;
-    font-size: 1rem;
+    padding: 12px 15px;
+    font-size: 1.1rem;
     border: 1px solid var(--brown-color);
-    /* Brown */
     border-radius: 5px;
     margin-bottom: 10px;
     background-color: var(--white-color);
-    /* White */
 }
 
-/* Star Rating */
 .rating {
     margin-top: 5px;
     margin-bottom: 10px;
@@ -93,10 +78,8 @@ textarea {
     margin-right: 8px;
     cursor: pointer;
     color: var(--darker-red-color);
-    /* Darker red */
 }
 
-/* Checkbox Section */
 fieldset {
     border: none;
     padding: 0;
@@ -107,19 +90,16 @@ fieldset label {
     margin: 4px 0;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
     color: var(--dark-red-color);
-    /* Dark red */
 }
 
-/* Button */
 button {
     margin-top: 20px;
     background-color: var(--brown-color);
-    /* Brown */
     color: var(--white-color);
-    padding: 10px;
-    font-size: 1rem;
+    padding: 15px;
+    font-size: 1.1rem;
     width: 100%;
     border: none;
     border-radius: 5px;
@@ -128,27 +108,23 @@ button {
 
 button:hover {
     background-color: var(--dark-red-color);
-    /* Dark red */
 }
 
-/* Footer */
 footer {
     text-align: center;
     margin-top: 25px;
     font-size: 0.85rem;
     color: var(--darker-red-color);
-    /* Darker red */
 }
 
 footer p {
     margin-top: 5px;
     color: var(--brown-color);
-    /* Brown */
 }
 
 @media (max-width: 600px) {
     .review-container {
-        padding: 20px;
+        padding: 25px;
     }
 
     h2 {
@@ -164,18 +140,21 @@ footer p {
     label,
     legend {
         font-size: 1rem;
+        margin-top: 18px;
+        margin-bottom: 8px;
     }
 
     input[type="text"],
     input[type="date"],
     select,
     textarea {
-        font-size: 0.95rem;
+        font-size: 1rem;
+        padding: 10px 12px;
     }
 
     button,
     input[type="submit"] {
-        font-size: 0.95rem;
-        padding: 10px;
+        font-size: 1rem;
+        padding: 12px;
     }
 }
