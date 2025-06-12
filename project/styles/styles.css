@@ -14,7 +14,9 @@ body {
     --white-color: #FFFFFF;
 
 }
-
+.link {
+    color: #001a8b;
+}
 header img {
     width: 100%;
     height: auto;
