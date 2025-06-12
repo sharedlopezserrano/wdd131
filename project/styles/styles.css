@@ -18,6 +18,7 @@ body {
 header img {
     width: 100%;
     height: auto;
+    padding: 10px;
 }
 
 header {
@@ -32,6 +33,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    height: 100px;
 }
 
 .header-container img {
@@ -44,14 +46,14 @@ header {
     text-align: center;
     font-size: 2rem;
     color: var(--white-color);
+    margin: 0;
 }
 
 main {
     padding: 20px;
 }
 
-h1
-h2 {
+h1 h2 {
     color: var(--darker-red-color);
 }
 
