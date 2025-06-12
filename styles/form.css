@@ -37,7 +37,7 @@ body {
 }
 
 /* Title */
-h2 {
+h1 {
     background-color: var(--brown-color);
     /* Brown */
     color: var(--white-color);
