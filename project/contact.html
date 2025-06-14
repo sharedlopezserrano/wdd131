@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shared Lopez">
+    <meta name="description"
+        content="Contact Us - Get in touch with PRESSTART for reservations, questions, or feedback.">
+    <title>Contact Us | PRESSTART</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/contact.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-bar">
+            <a href="../presstart.html" class="logo-link">
+                <img class="logo-img" src="images/press-start-logo1.png" alt="PRESSTART Logo" height="48">
+            </a>
+            <button class="hamburger" id="hamburger-btn" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="header-title">PRESS START</div>
+            <nav class="header-nav" id="main-nav">
+                <a href="../presstart.html">WELCOME</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="menu.html">MENU</a>
+                <a href="contact.html">CONTACT US</a>
+                <button class="close-nav" id="close-nav-btn" aria-label="Close navigation">&#10005;</button>
+            </nav>
+        </div>
+    </header>
+    <main class="main-layout">
+        <section class="contact-section">
+            <h1>Reserve Your Spot</h1>
+            <p>Book a table, celebrate a birthday, or reserve the entire venue! Select your reservation type and
+                preferred time slot below.</p>
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="reservation-type">Reservation Type</label>
+                <select id="reservation-type" name="reservation-type" required>
+                    <option value="">Select an option</option>
+                    <option value="table">Table Reservation</option>
+                    <option value="birthday">Birthday Party</option>
+                    <option value="full">Full Venue</option>
+                </select>
+
+                <label for="reservation-day">Day</label>
+                <select id="reservation-day" name="reservation-day" required>
+                    <option value="">Select a day</option>
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                    <option value="saturday">Saturday</option>
+                </select>
+
+                <div id="time-slot-group">
+                    <label for="reservation-time">Time Slot</label>
+                    <select id="reservation-time" name="reservation-time" required>
+                        <option value="">Select a time</option>
+                        <option value="18:00">6:00 PM - 8:00 PM</option>
+                        <option value="20:00">8:00 PM - 10:00 PM</option>
+                        <option value="22:00">10:00 PM - 12:00 AM</option>
+                        <option value="00:00">12:00 AM - 2:00 AM</option>
+                    </select>
+                </div>
+
+                <label for="message">Additional Details</label>
+                <textarea id="message" name="message" rows="5"
+                    placeholder="Let us know any special requests!"></textarea>
+
+                <button type="submit">Reserve Now</button>
+            </form>
+            <div class="contact-info">
+                <p><strong>Email:</strong> contact@presstart.com</p>
+                <p><strong>Phone:</strong> +55 45 99999-9999</p>
+                <p><strong>Address:</strong> R. Dom Pedro II, 190-300, Centro, Toledo, PR</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Shared Lopez Serrano 🌎 Brazil</p>
+        <p id="lastModified">Last Modification: <span id="modification-date"></span></p>
+    </footer>
+</body>
+
+</html>
